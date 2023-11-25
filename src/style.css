@@ -4,7 +4,65 @@
     margin: 0;
 }
 
-body {
+#container {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+
+form {
+    display: flex;
+    
+}
+
+input {
+    width: 400px;
+    font-size: 1.1rem;
+}
+
+button {
+    height: 1.8rem;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid black; */
+    font-size: 1.2rem;
+}
+
+.card div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+}
+
+.card div img:nth-of-type(1) {
+    width: 50px;
+}
+
+.card div img:nth-of-type(2) {
+    width: 40px;
+}
+
+.card div img:nth-of-type(2):hover {
+    cursor: pointer;
 }
