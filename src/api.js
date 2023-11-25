@@ -1,7 +1,7 @@
 import { dom } from './dom.js'
 
 const WEATHER_API_KEY = 'a2550266a75b4917919135441232511'
-const WEATHER_BASE = 'http://api.weatherapi.com/v1'
+const WEATHER_BASE = 'https://api.weatherapi.com/v1'
 
 const weatherAPI = (() => {
     
