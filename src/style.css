@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 *, *::after, *::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    color: white;
 }
 
 #container {
@@ -14,24 +21,34 @@
     align-items: center;
 }
 
+.form-container {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
 
 form {
     display: flex;
-    
+    /* gap: 2px; */
 }
 
 input {
-    width: 400px;
+    width: 450px;
     font-size: 1.1rem;
+    border: 1px solid black;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 10px;
 }
 
 button {
-    height: 1.8rem;
     width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid black;
+
 }
 
 button img {
@@ -39,20 +56,31 @@ button img {
     height: 20px;
 }
 
+.loading {
+    visibility: hidden;
+    width: 30px;
+    margin-left: 10px;
+}
+
 
 .card {
+    width: 450px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     /* border: 1px solid black; */
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .card div {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+}
+
+.card div p {
+    width: 4ch;
 }
 
 .card div img:nth-of-type(1) {

@@ -11,17 +11,20 @@
 <body>
     <div id="container">
         <h1>My Weather App</h1>
-        <form action="" method="post">
-            <input type="text" pattern="[a-zA-Z]*" maxlength="100">
-            <button></button>
-        </form>
+        <div class="form-container">
+            <form action="" method="post">
+                <input type="text" pattern="[a-zA-Z]*" maxlength="100" required>
+                <button></button>
+                <img src="" class="loading">
+            </form>
+        </div>
         <div class="card">
             <h2 id="location"></h2>
             <p id="time"></p>
             <div>
                 <img id="temp-logo" src="">
                 <p id="temperature"></p>
-                <img id="temp-unit" src="" >
+                <img id="temp-unit" src="">
             </div>
         </div>
     </div>
